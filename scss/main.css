@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5eff5;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card {
+  width: 60%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 30px 5px rgba(128, 128, 128, 0.514);
+          box-shadow: 0 5px 30px 5px rgba(128, 128, 128, 0.514);
+}
+
+.card .upper_card {
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+  padding: 5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.card .upper_card h1 {
+  color: #2ab2af;
+}
+
+.card .upper_card p:first-of-type {
+  font-weight: 700;
+  color: #c0df34;
+}
+
+.card .upper_card p:nth-child(3) {
+  color: #98a6bd;
+}
+
+.card .lower_card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .lower_card h2 {
+  color: #e5eff5;
+}
+
+.card .lower_card .sign_up {
+  border-radius: 0 0 0 10px;
+  background-color: #2ab2af;
+  padding: 5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .lower_card .sign_up p > span:first-child {
+  font-size: 28px;
+  font-weight: 700;
+  padding-right: 3%;
+  color: white;
+}
+
+.card .lower_card .sign_up p > span:nth-child(2) {
+  color: #e5eff5;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card .lower_card .sign_up p:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e5eff5;
+  margin-bottom: 7%;
+}
+
+.card .lower_card .sign_up .button {
+  background-color: #c0df34;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2.5px 10px 5px rgba(128, 128, 128, 0.514);
+          box-shadow: 0 2.5px 10px 5px rgba(128, 128, 128, 0.514);
+  text-align: center;
+  padding: 5%;
+  font-weight: 700;
+  color: #fff;
+  margin-top: auto;
+}
+
+.card .lower_card .sign_up .button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.card .lower_card .about_us {
+  padding: 5%;
+  border-radius: 0 0 10px 0;
+  background-color: #2ab2af;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.card .lower_card .about_us p {
+  text-align: start;
+  color: #e5eff5;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .upper_card {
+    padding: 7.5%;
+  }
+  .card .lower_card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 0 0 10px 10px;
+  }
+  .card .lower_card .sign_up {
+    padding: 7.5%;
+    border-radius: 0;
+  }
+  .card .lower_card .about_us {
+    padding: 7.5%;
+    border-radius: 0 0 10px 10px;
+  }
+  .card .lower_card .about_us p {
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

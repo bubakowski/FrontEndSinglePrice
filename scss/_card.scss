@@ -1,0 +1,83 @@
+.card {
+	width: 60%;
+	border-radius: 10px;
+	box-shadow: 0 5px 30px 5px rgba(128, 128, 128, 0.514);
+	.upper_card {
+		border-radius: 10px 10px 0 0;
+		background-color: #fff;
+		padding: 5%;
+		flex: 1;
+		h1 {
+			color: $cyan;
+		}
+		p:first-of-type {
+			font-weight: 700;
+			color: $brightYellow;
+		}
+		p:nth-child(3) {
+			color: $grayishBlue;
+		}
+	}
+	.lower_card {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		h2 {
+            
+			color: $lightGray;
+		}
+		.sign_up {
+			border-radius: 0 0 0 10px;
+			background-color: $cyan;
+			padding: 5%;
+			flex: 1;
+			flex-direction: column;
+            display: flex;
+
+			p > span:first-child {
+				font-size: 28px;
+				font-weight: 700;
+				padding-right: 3%;
+				color: white;
+			}
+			p > span:nth-child(2) {
+				color: $lightGray;
+				filter: brightness(90%);
+				align-self: center;
+			}
+			p:last-of-type {
+                
+				@include flex(start, center);
+				color: $lightGray;
+                margin-bottom: 7%;
+			}
+			.button {
+				background-color: $brightYellow;
+				border-radius: 10px;
+                box-shadow: 0 2.5px 10px 5px rgba(128, 128, 128, 0.514);
+				text-align: center;
+				padding: 5%;
+				font-weight: 700;
+				color: #fff;
+                margin-top: auto;
+			}
+			.button:hover {
+				cursor: pointer;
+				filter: brightness(110%);
+			}
+		}
+		.about_us {
+			padding: 5%;
+			border-radius: 0 0 10px 0;
+			background-color: $cyan;
+			flex: 1;
+			filter: brightness(110%);
+
+			p {
+				text-align: start;
+				color: $lightGray;
+				filter: brightness(90%);
+			}
+		}
+	}
+}

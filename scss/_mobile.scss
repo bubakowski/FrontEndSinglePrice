@@ -1,0 +1,27 @@
+@media screen and(max-width:768px) {
+    .card{
+        width: 90%;
+        height: 95%;
+        flex-direction: column;
+        .upper_card{
+            padding: 7.5%;
+        }
+       
+        .lower_card{
+            flex-direction: column;
+            border-radius: 0 0 10px 10px;
+            .sign_up{
+                padding: 7.5%;
+                border-radius:0;
+            }
+            .about_us{
+                padding: 7.5%;
+                border-radius:0 0 10px 10px;
+                p{width: 100%}
+            }
+            
+            
+        }
+    }
+    footer{display: none;}
+}
